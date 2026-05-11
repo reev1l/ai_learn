@@ -3,6 +3,7 @@ import subprocess
 
 
 DATA_DIR = Path("data")
+ARCHIVE_DIR = DATA_DIR / "archives"
 
 URLS = [
     "https://zenodo.org/records/14546832/files/HRPlanes.7z.001?download=1",
@@ -18,11 +19,11 @@ URLS = [
 ]
 
 
-DATA_DIR.mkdir(parents=True, exist_ok=True)
+ARCHIVE_DIR.mkdir(parents=True, exist_ok=True)
 
 for url in URLS:
     file_name = url.split("/")[-1].split("?")[0]
-    out_path = DATA_DIR / file_name
+    out_path = ARCHIVE_DIR / file_name
 
     if out_path.exists():
         print("already downloaded:", out_path)
@@ -35,7 +36,7 @@ for url in URLS:
     )
 
 
-first_part = DATA_DIR / "HRPlanes.7z.001"
+first_part = ARCHIVE_DIR / "HRPlanes.7z.001"
 
 print("extract:", first_part)
 subprocess.run(

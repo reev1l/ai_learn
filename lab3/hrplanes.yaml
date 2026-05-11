@@ -1,7 +1,7 @@
-path: data/HRPlanes
-train: images/train
-val: images/val
-test: images/test
+path: .
+train: data/train_fixed.txt
+val: data/validation_fixed.txt
+test: data/test_fixed.txt
 
 names:
   0: airplane
