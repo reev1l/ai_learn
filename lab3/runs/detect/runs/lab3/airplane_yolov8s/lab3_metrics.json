@@ -1,0 +1,11 @@
+{
+  "target_metric": "mAP50",
+  "target_value": 0.7,
+  "passed": true,
+  "precision": 0.9838528293099411,
+  "recall": 0.9881061299176578,
+  "f1": 0.9859748926608167,
+  "mAP50": 0.9918570971191698,
+  "mAP50-95": 0.8523607403200881,
+  "best_weights": "/home/n.bezborodov/ai/lab3/runs/detect/runs/lab3/airplane_yolov8s/weights/best.pt"
+}
